@@ -46,7 +46,7 @@ async function pdok(query, isStore = false) {
   url.searchParams.set("q", query);
   url.searchParams.set("fq", "type:adres");
   url.searchParams.set("rows", isStore ? "12" : "10");
-  url.searchParams.set("fl", "weergavenaam,centroide_ll,postcode,huisnummer,woonplaatsnaam");
+  url.searchParams.set("fl", "weergavenaam,centroide_ll,postcode,huisnummer,huisletter,woonplaatsnaam");
   const data = await fetchJSON(url);
   const docs = data?.response?.docs || [];
   const postcode = query.toUpperCase().match(/\b([1-9]\d{3})\s*([A-Z]{2})\b/);
@@ -62,7 +62,7 @@ async function pdok(query, isStore = false) {
     const coords = parsePoint(doc.centroide_ll);
     if (!coords || !doc.weergavenaam) continue;
     if (requestedPostal && String(doc.postcode || "").replace(/\s/g, "").toUpperCase() !== requestedPostal) continue;
-    if (houseNo && String(doc.huisnummer || "").toLowerCase() !== houseNo.replace(/[a-z]$/i, "")) continue;
+    if (houseNo && (String(doc.huisnummer || "") + String(doc.huisletter || "")).toLowerCase() !== houseNo) continue;
     if (isStore && (!/Weerdingerkanaal/i.test(doc.weergavenaam) || String(doc.huisnummer) !== "161")) continue;
     return { coordinates: coords, label: doc.weergavenaam };
   }
