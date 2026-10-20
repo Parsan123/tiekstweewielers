@@ -4,3 +4,74 @@
 @media(max-width:920px){.navlinks,.navcta{display:none}.burger{display:block;margin-left:auto}.mobile-menu.open{display:grid;padding:8px var(--pad) 20px;border-top:1px solid var(--line)}.mobile-menu a{padding:10px 0;font-weight:850}.hero{height:auto;min-height:760px}.hero-bottom{grid-template-columns:1fr 1fr}.section-head,.image-copy,.review-grid,.visit-grid,.intro,.faq,.contact-grid,.detail,.footer-grid{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}.service-split{grid-template-columns:1fr}.service-photo{min-height:480px}.product-grid{grid-template-columns:repeat(2,1fr)}.detail-media{position:static}.footer-cols{grid-template-columns:1fr 1fr}.mobile-actions{position:fixed;bottom:0;left:0;right:0;z-index:100;display:grid;grid-template-columns:1fr 1fr;background:#111}.mobile-actions a{padding:15px;text-align:center;color:#fff;font-size:10px;font-weight:950;text-transform:uppercase}.mobile-actions a:first-child{background:var(--y);color:#000}.footer-bottom{padding-bottom:48px}}
 @media(max-width:600px){:root{--pad:18px}.topline{height:31px}.topline span:last-child{display:none}.nav{height:70px}.logo{width:120px;flex-basis:120px}.logo img{height:47px}.hero{min-height:710px}.hero h1{font-size:clamp(50px,15vw,72px)}.hero .lead{font-size:15px}.hero-bottom{grid-template-columns:1fr 1fr}.hero-bottom div:nth-child(n+3){display:none}.actions{flex-direction:column;align-items:stretch}.section{padding:74px 0}.section-head{display:block}.section-head p{margin-top:18px}.product-grid{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.service-copy{padding:56px var(--pad)}.service-photo{min-height:360px}.page-hero,.page-hero .container{min-height:430px}.page-hero .container{padding-bottom:45px}.footer-cols{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.rating{font-size:110px}.visit{padding:80px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+/* ===== Tieks fase 1 — direct contact en 50 km servicegebied ===== */
+.contact-direct{padding:10px 0 0;min-width:0}
+.contact-direct h2{font-size:clamp(38px,4.4vw,65px);line-height:1.01;margin:18px 0 20px}
+.contact-direct .prose{max-width:610px}
+.contact-options{display:grid;grid-template-columns:1fr;gap:12px;margin:30px 0 32px}
+.contact-option{display:grid;grid-template-columns:55px minmax(0,1fr) 24px;align-items:center;gap:15px;padding:21px;background:var(--paper);border:1px solid var(--line);transition:background .2s,border .2s}
+.contact-option:hover,.contact-option:focus-visible{background:#f1f2de;border-color:#999a47;outline-offset:3px}
+.contact-option-icon{display:grid;place-items:center;height:53px;width:53px;border-radius:50%;background:var(--y);font-size:25px;font-weight:800}
+.contact-option span:nth-child(2){min-width:0}
+.contact-option small,.contact-option em{display:block;font-style:normal;font-size:10px;color:var(--muted);line-height:1.5}
+.contact-option strong{display:block;font-size:clamp(16px,2vw,23px);letter-spacing:-.035em;overflow-wrap:anywhere;margin:5px 0}
+.contact-small-note{border-top:1px solid var(--line);padding-top:27px}
+.contact-small-note b{display:block;font-size:17px}
+.contact-small-note p{font-size:13px;line-height:1.65;color:var(--muted);max-width:500px}
+.contact-small-note .btn{margin-top:9px}
+.service-spotlight{display:flex;justify-content:space-between;gap:34px;align-items:center;background:#fff;padding:32px 36px;margin-top:26px;border:2px solid #111}
+.service-spotlight h3{font-size:clamp(25px,3vw,38px);margin:11px 0}
+.service-spotlight p{max-width:660px;line-height:1.6;font-size:14px;color:#4a4b43;margin:0}
+.service-spotlight-cta{display:grid;justify-items:end;gap:16px;flex-shrink:0}
+.service-spotlight-cta>span{font-weight:950;font-size:42px;letter-spacing:-.065em;white-space:nowrap}
+.service-spotlight-cta small{font-size:10px;font-weight:850;letter-spacing:.01em;display:block;text-align:right}
+.service-emphasis{color:#393d07}
+.service-intro{margin-bottom:36px}
+.service-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#222;margin-bottom:40px;border:1px solid #222}
+.service-benefits>div{background:#f4f1b0;display:grid;gap:10px;padding:22px 25px}
+.service-benefits span{font-size:11px;font-weight:900;opacity:.55}
+.service-benefits b{font-size:20px;letter-spacing:-.04em}
+.service-benefits small{font-size:12px;color:#494a2e;line-height:1.55}
+.service-finder{background:#fff;box-shadow:0 22px 70px rgba(0,0,0,.08);border:1px solid #cfcfbc;overflow:hidden}
+.service-finder-header{padding:36px 40px;background:#10120d;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.service-finder-header h3{font-size:clamp(29px,3.3vw,45px);margin:13px 0}
+.service-finder-header p{color:rgba(255,255,255,.71);font-size:14px;line-height:1.6;max-width:560px}
+.service-finder-header .eyebrow{color:#d4d4ca}
+.service-radius-label{display:grid;justify-items:center;min-width:145px;border-left:1px solid rgba(255,255,255,.22);padding-left:30px;text-align:center}
+.service-radius-label strong{font-size:64px;letter-spacing:-.09em;line-height:1;font-weight:950;color:var(--y)}
+.service-radius-label strong span{font-size:18px;letter-spacing:0}
+.service-radius-label small{font-size:10px;letter-spacing:.035em;color:#fff;margin-top:8px}
+.service-finder-body{display:grid;grid-template-columns:.9fr 1.1fr;gap:0}
+.service-check-column{padding:34px 35px;min-width:0}
+.service-check-form label{display:block;font-size:11px;font-weight:900;letter-spacing:.045em;margin:0 0 12px}
+.service-check-fields{display:grid;gap:10px}
+.service-check-fields input{width:100%;min-width:0;min-height:54px;background:#f8f8f5;border:1px solid #b5b8ad;padding:14px 16px;color:#171916;font-size:16px;border-radius:0}
+.service-check-fields input:focus-visible{outline:3px solid #c2c449;outline-offset:1px}
+.service-check-fields .btn{width:100%;cursor:pointer}
+.service-check-fields .btn:disabled{cursor:wait;opacity:.6;transform:none}
+.service-check-form small{display:block;font-size:11px;color:var(--muted);line-height:1.55;margin-top:12px}
+.service-result{margin-top:21px;border:1px solid #d3d3c8;background:#f3f3ee;padding:22px 20px}
+.service-result[hidden],.service-result-actions[hidden]{display:none!important}
+.service-result strong{font-size:16px;line-height:1.4;display:block}
+.service-result p{font-size:12px;margin:9px 0 0;color:#53584b;overflow-wrap:anywhere}
+.service-result--yes{background:#e9f5e7;border-color:#87b18c}
+.service-result--no{background:#fff3e7;border-color:#d9a67c}
+.service-result--error{background:#f5f5f2;border-color:#c2c2b6}
+.service-result-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.service-result-actions .btn{font-size:9px;padding:0 13px;min-height:44px}
+.service-check-help{margin-top:29px;border-top:1px solid var(--line);padding-top:23px}
+.service-check-help b{font-size:14px}
+.service-check-help p{font-size:12px;color:var(--muted);line-height:1.65}
+.service-check-help .actions{margin-top:16px}
+.service-check-help .actions .btn{min-height:45px}
+.service-map-column{background:#ecefe8;min-width:0;min-height:485px;display:flex;flex-direction:column;isolation:isolate;position:relative}
+#tieks-service-map{min-height:405px;flex:1;width:100%;z-index:0}
+.service-map-note{background:#e6e7db;padding:17px 22px;margin:0;line-height:1.55;font-size:12px}
+.service-map-credit{font-size:10px;line-height:1.55;color:#575b53;padding:6px 22px 13px;margin:0;background:#e6e7db}
+.service-map-credit a{text-decoration:underline;font-weight:800}
+#tieks-service-map .leaflet-container{font:inherit}
+#tieks-service-map .leaflet-control-attribution{font-size:10px}
+@media(max-width:920px){.service-finder-body{grid-template-columns:1fr}.service-map-column{min-height:430px}#tieks-service-map{height:410px}.service-finder-header{padding:29px 25px}.service-check-column{padding:29px 25px}.service-benefits{grid-template-columns:1fr}.service-spotlight{align-items:flex-start}}
+@media(max-width:650px){.service-spotlight{flex-direction:column;padding:25px 20px}.service-spotlight-cta{width:100%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.service-spotlight-cta small{text-align:left}.service-benefits>div{padding:20px}.service-finder-header{flex-direction:column;align-items:stretch;gap:15px;padding:25px 19px}.service-radius-label{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:13px 0 0;justify-items:start}.service-radius-label strong{font-size:42px}.service-check-column{padding:24px 18px}.service-finder-header h3{font-size:31px}.contact-options{gap:10px}.contact-option{padding:14px;grid-template-columns:40px minmax(0,1fr) 15px;gap:10px}.contact-option-icon{height:40px;width:40px;font-size:19px}.contact-option strong{font-size:16px}.service-result-actions{flex-direction:column}.service-result-actions .btn{width:100%}#tieks-service-map{height:350px;min-height:350px}.service-map-column{min-height:420px}}
