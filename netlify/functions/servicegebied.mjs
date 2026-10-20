@@ -1,7 +1,8 @@
 // Netlify serverfunctie voor gratis 50 km haal- en brengservice.
 // PDOK valideert Nederlandse adressen (gratis); openrouteservice berekent echte autoroutes.
 // ORS_API_KEY wordt uitsluitend als Netlify-omgevingsvariabele ingesteld, nooit in de code.
-const ORS = "https://api.openrouteservice.org";
+const ORS = "https://api.heigit.org/openrouteservice";
+const PELIAS = "https://api.heigit.org/pelias/v1";
 const PDOK = "https://api.pdok.nl/bzk/locatieserver/search/v3_1/free";
 const STORE = "Weerdingerkanaal Noordzijde 161, 7831 HL Nieuw-Weerdinge";
 const LIMIT = 50000; // meters, shortest road-driving route
@@ -69,7 +70,7 @@ async function pdok(query, isStore = false) {
 }
 
 async function orsGeocode(query) {
-  const u = new URL(ORS + "/geocode/search");
+  const u = new URL(PELIAS + "/search");
   u.searchParams.set("text", query);
   u.searchParams.set("size", "6");
   const data = await fetchJSON(u, { headers: { Authorization: process.env.ORS_API_KEY } });
