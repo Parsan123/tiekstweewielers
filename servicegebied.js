@@ -114,7 +114,7 @@
       : "Uw adres ligt buiten ons standaard servicegebied. Neem contact op om de mogelijkheden te bespreken.";
     addressLabel.textContent = data.address;
     distanceLabel.textContent = "Kortste berekende autoroute: " +
-      new Intl.NumberFormat("nl-NL", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(data.distanceKm) + " km";
+      new Intl.NumberFormat("nl-NL", { minimumFractionDigits: 1, maximumFractionDigits: 3 }).format(data.distanceKm) + " km";
     actions.hidden = false;
   }
 
