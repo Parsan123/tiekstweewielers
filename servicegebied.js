@@ -16,6 +16,7 @@
 
   if (!window.L) {
     zoneStatus.textContent = "De kaart kan niet worden geladen. Bel Tieks voor informatie over ons servicegebied.";
+    output.hidden = false;
     status.textContent = "De kaartdienst is tijdelijk niet beschikbaar. U kunt ons wel bellen of mailen.";
     form.querySelector("button").disabled = true;
     return;
@@ -65,11 +66,22 @@
 
   async function loadZone() {
     zoneStatus.textContent = "Servicegebied op basis van de wegenkaart laden…";
+    // De exacte winkelmarker is via de Nederlandse adresdienst beschikbaar.
+    try {
+      const position = await callService({ action: "origin" });
+      const point = position.origin?.coordinates;
+      if (Array.isArray(point) && point.length === 2) {
+        storeMarker = L.marker([point[1], point[0]]).addTo(map).bindPopup("Tieks Tweewielers · Nieuw-Weerdinge");
+        map.setView([point[1], point[0]], 10);
+      }
+    } catch {
+      // Gebruik geen onbevestigde winkelpositie.
+    }
     try {
       const data = await callService({ action: "zone" });
       if (!data.area?.geometry || !Array.isArray(data.origin?.coordinates)) throw new Error("Servicezone niet beschikbaar.");
       const position = [data.origin.coordinates[1], data.origin.coordinates[0]];
-      storeMarker = L.marker(position).addTo(map).bindPopup("Tieks Tweewielers · Nieuw-Weerdinge");
+      if (!storeMarker) storeMarker = L.marker(position).addTo(map).bindPopup("Tieks Tweewielers · Nieuw-Weerdinge");
       zoneLayer = L.geoJSON(data.area, {
         style: { color: "#14170e", weight: 2, fillColor: "#e4df16", fillOpacity: 0.30, opacity: 0.9 }
       }).addTo(map);
@@ -112,6 +124,8 @@
     output.hidden = true;
     actions.hidden = true;
     if (address.length < 7 || address.length > 150 || !/\d/.test(address)) {
+      output.hidden = false;
+      output.className = "service-result service-result--error";
       status.textContent = "Vul een postcode en huisnummer of een volledig adres met huisnummer in.";
       input.focus();
       return;
@@ -119,6 +133,10 @@
 
     submit.disabled = true;
     submit.textContent = "Afstand berekenen…";
+    output.hidden = false;
+    output.className = "service-result";
+    addressLabel.textContent = "";
+    distanceLabel.textContent = "";
     status.textContent = "Uw adres wordt gecontroleerd. Een moment alstublieft.";
     try {
       const data = await callService({ action: "check", address });
