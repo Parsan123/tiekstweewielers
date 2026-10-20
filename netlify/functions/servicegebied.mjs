@@ -62,7 +62,7 @@ async function pdok(query, isStore = false) {
     if (!coords || !doc.weergavenaam) continue;
     if (requestedPostal && String(doc.postcode || "").replace(/\s/g, "").toUpperCase() !== requestedPostal) continue;
     if (houseNo && String(doc.huisnummer || "").toLowerCase() !== houseNo.replace(/[a-z]$/i, "")) continue;
-    if (isStore && (!/Weerdingerkanaal Noordzijde/i.test(doc.weergavenaam) || String(doc.huisnummer) !== "161")) continue;
+    if (isStore && (!/Weerdingerkanaal/i.test(doc.weergavenaam) || String(doc.huisnummer) !== "161")) continue;
     return { coordinates: coords, label: doc.weergavenaam };
   }
   return null;
@@ -156,7 +156,7 @@ export default async function handler(req) {
     if (!Number.isFinite(meters) || !feature?.geometry) throw new Error("NO_ROUTE");
     return response({
       inside: meters <= LIMIT,
-      distanceKm: Math.round(meters / 100) / 10,
+      distanceKm: Math.round(meters) / 1000,
       address: destination.label,
       destination: destination.coordinates,
       route: feature.geometry
