@@ -19,7 +19,7 @@ De inhoudelijke aanpassingen zijn uitgevoerd op de ontwikkelbranch `tieks/klantw
 - [x] Gazelle Curb C1 toegevoegd aan overzicht en nieuwe productdetailpagina met drie kleurkeuzes.
 - [x] Over Tieks aangepast voor actuele teamfoto en koffiehoek.
 - [x] Fotoplaatsingen in homepage, assortiment, e-bikes, contact, FAQ en stadsfietsen voorbereid.
-- [x] Onvolledige afgebroken productzinnen opgeknapt; verouderde voorraadclaims verwijderd.
+- [x] Alle 13 overige Gazelle-productpagina's aangevuld met twee leesbare, modelspecifieke beschrijvingsalinea's en drie kernpunten; actuele catalogusomschrijvingen hiermee afgestemd. Verouderde voorraadclaims verwijderd.
 - [x] Geen DNS-, e-mail- of Netlify-productieaanpassingen uitgevoerd.
 
 ## Upload originele geoptimaliseerde foto's

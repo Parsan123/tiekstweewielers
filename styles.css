@@ -123,3 +123,12 @@
 .curb-thumbnails button span{text-align:center;font-size:11px;font-weight:800}
 @media(max-width:1100px){.logo{width:108px;flex-basis:108px}.logo img{height:40px}}
 @media(max-width:700px){.logo{width:96px;flex-basis:96px}.logo img{height:36px}.accessories-gallery{grid-template-columns:1fr}.accessories-gallery img{height:280px}.curb-thumbnails button img{height:70px}}
+
+/* Productbeschrijvingen: leesbare alinea's en kernpunten (oktober 2026) */
+.detail-desc + .detail-desc{margin-top:12px}
+.detail-highlights{margin:21px 0 15px;padding:20px 22px;border:1px solid var(--line);border-radius:15px;background:#f8f8f4}
+.detail-highlights h2{font-size:clamp(18px,2vw,23px);line-height:1.25;margin:0 0 14px;font-weight:850;color:var(--k)}
+.detail-highlights ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}
+.detail-highlights li{position:relative;padding-left:24px;font-size:14px;line-height:1.5;color:#333c30}
+.detail-highlights li:before{content:"✓";position:absolute;top:0;left:0;font-weight:900;color:#62742e}
+@media(max-width:700px){.detail-highlights{padding:16px 17px;margin:18px 0 12px}.detail-highlights li{font-size:13px}}
