@@ -1,7 +1,7 @@
 TIEKS TWEEWIELERS — DEFINITIEVE V6
 
 Gebouwd op basis van de officiële Tieks-website en actuele WP-productcatalogus.
-- 20 actuele fietsmodellen met lokale productfoto’s en actuele online prijzen
+- 14 zichtbare fietsmodellen (Gazelle; 7 modellen van Sparta, Batavus en Koga tijdelijk verborgen) met lokale productfoto’s en actuele online prijzen
 - eigen productdetailpagina voor ieder model
 - assortimentfilters voor e-bike/stadsfiets/merk
 - werkplaats, gratis haal- en brengservice, leenfiets, fietsplan en verzekering verwerkt

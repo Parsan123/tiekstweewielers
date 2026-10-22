@@ -3,14 +3,14 @@
 ## Uitgevoerd
 - Contactformulier vervangen door telefoon- en e-mailcontact.
 - Homepage: opvallende knop ‘Ontdek onze gratis ophaalservice’.
-- Werkplaats: premium service-dashboard met 50 km rijafstandregel, stappenplan en servicekeuze.
+- Werkplaats: premium service-dashboard met 25 km rijafstandregel, stappenplan en servicekeuze.
 - Keuze Reparatie / Onderhoud / E-bike / Anders maakt een vooraf ingevulde e-mail (mailto) klaar.
 - ‘Toon kaart’ laadt een ingesloten Google Maps-kaart uitsluitend na bezoekersklik.
 - ‘Bekijk rijafstand’ opent Google Maps met een autoroute naar Weerdingerkanaal Noordzijde 161, Nieuw-Weerdinge.
 - FAQ, privacy, styling en veiligheidsheaders bijgewerkt.
 
 ## Bewuste beperkingen
-- Geen API-sleutel, geen automatische adrescheck en geen bewering dat de website adressen op 50 km toetst.
+- Geen API-sleutel, geen automatische adrescheck en geen bewering dat de website adressen op 25 km toetst.
 - Bezoekers raadplegen de autoroute in Google Maps; Tieks bevestigt servicegebied en afspraak.
 - WhatsApp wordt niet toegevoegd zonder te weten of het winkelnummer daarvoor geschikt is.
 - Nieuwe foto's, collectie 2027, DNS en eigen domein ongewijzigd.

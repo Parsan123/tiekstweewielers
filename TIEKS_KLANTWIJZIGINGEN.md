@@ -2,20 +2,20 @@
 
 ## Status
 
-De inhoudelijke aanpassingen zijn uitgevoerd op de ontwikkelbranch `tieks/klantwijzigingen-oktober-2026`. De **14 afbeeldingsbestanden zijn nog niet in GitHub geüpload** en moeten vóór een eventuele merge of deploy op de juiste paden worden toegevoegd.
+De inhoudelijke aanpassingen zijn uitgevoerd op de ontwikkelbranch `tieks/klantwijzigingen-oktober-2026`. De **14 afbeeldingen zijn naar GitHub geüpload en op de juiste paden gecontroleerd**. De branch blijft ter review en is nog niet definitief gepubliceerd.
 
-**NIET MERGEN / NIET PUBLICEREN voordat alle afbeeldingen zijn toegevoegd en de pagina's zijn gecontroleerd.**
+**NIET MERGEN / NIET PUBLICEREN voordat de gewijzigde pagina's visueel in een Deploy Preview zijn gecontroleerd en de opdrachtgever instemt.**
 
 ## Uitgevoerde aanpassingen
 
-- [x] Gratis haal- en brengservice: 50 km naar 25 km (homepage, FAQ, werkplaats en e-mailtemplate).
+- [x] Gratis haal- en brengservice: van 50 km naar 25 km, inclusief het grote KM-getal op het servicedashboard.
 - [x] Sparta, Batavus en Koga: tijdelijk uit productoverzichten, filters en actuele catalogus.
 - [x] Historische catalogus behouden als `catalog-archief-oktober-2026.json`.
 - [x] Oude product-URL's via geforceerde tijdelijke Netlify-302-redirect naar assortiment.
 - [x] Kinderfietsslogan aangepast naar “Je eerste fiets vergeet je nooit”.
 - [x] Officiële, door de klant aangeleverde Facebook-link toegevoegd aan de footer.
 - [x] Nieuwe accessoire- en fietstassensectie toegevoegd.
-- [x] Bestaand logo groter gemaakt, zonder vervangend merklogo.
+- [x] Bestaand logo op verzoek opnieuw subtiel kleiner gemaakt, zonder vervangend merklogo.
 - [x] Gazelle Curb C1 toegevoegd aan overzicht en nieuwe productdetailpagina met drie kleurkeuzes.
 - [x] Over Tieks aangepast voor actuele teamfoto en koffiehoek.
 - [x] Fotoplaatsingen in homepage, assortiment, e-bikes, contact, FAQ en stadsfietsen voorbereid.
@@ -56,7 +56,7 @@ Deze laatste twee Koga-/showroomfoto's zijn optioneel en worden bewust niet prom
 
 ## Controle vóór eventuele oplevering
 
-- [ ] Upload de 14 mediabestanden op de genoemde locaties.
+- [x] Upload de 14 mediabestanden op de genoemde locaties.
 - [ ] Controleer of alle afbeeldingen op alle pagina's laden en uitsnedes kloppen.
 - [ ] Test de galerij en alle knoppen op mobiel én desktop.
 - [ ] Controleer dat de geforceerde redirects geen zichtbare oude modelpagina's achterlaten.
