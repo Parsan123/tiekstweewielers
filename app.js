@@ -10,3 +10,19 @@ document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click'
 }));
 const status=document.querySelector('[data-open-status]');
 if(status){const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());const g=t=>parts.find(x=>x.type===t)?.value;const d=g('weekday'),m=+g('hour')*60 + +g('minute');const hrs={Tue:[510,1080],Wed:[510,1080],Thu:[510,1080],Fri:[510,1080],Sat:[510,1020]};const h=hrs[d];status.textContent=h&&m>=h[0]&&m<h[1]?'Nu geopend':'Nu gesloten';}
+
+// Ensure the official Facebook link is available in the footer on every page.
+(()=>{
+const footer=document.querySelector('.footer');
+if(!footer||footer.querySelector('.tieks-facebook'))return;
+const email=[...footer.querySelectorAll('a[href^="mailto:"]')].pop();
+if(!email)return;
+const a=document.createElement('a');
+a.className='tieks-facebook';
+a.href='https://www.facebook.com/share/1HnfHLcHRz/?mibextid=wwXIfr';
+a.target='_blank';
+a.rel='noopener noreferrer';
+a.setAttribute('aria-label','Tieks Tweewielers op Facebook');
+a.textContent='● Facebook';
+email.insertAdjacentElement('afterend',a);
+})();
