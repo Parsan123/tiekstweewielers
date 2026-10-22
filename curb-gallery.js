@@ -1,0 +1,2 @@
+/* Toegankelijke fotogalerij voor de Gazelle Curb C1. */
+(()=>{'use strict';const root=document.querySelector('[data-curb-gallery]');if(!root)return;const hero=root.querySelector('[data-curb-main]');const buttons=[...root.querySelectorAll('[data-curb-src]')];for(const btn of buttons){btn.addEventListener('click',()=>{hero.src=btn.dataset.curbSrc;hero.alt=btn.dataset.curbAlt;buttons.forEach(x=>x.setAttribute('aria-pressed',String(x===btn)));});}})();
