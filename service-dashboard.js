@@ -30,7 +30,7 @@ function setService(name) {
     "Mijn telefoonnummer:",
     "Eventuele voorkeursdag:",
     "",
-    "Ik begrijp dat Tieks de rijafstand (maximaal 50 km over de weg) en het ophaalmoment nog bevestigt.",
+    "Ik begrijp dat Tieks de rijafstand (maximaal 25 km over de weg) en het ophaalmoment nog bevestigt.",
     "",
     "Met vriendelijke groet,"
   ].join("\n");
