@@ -23,6 +23,6 @@ a.href='https://www.facebook.com/share/1HnfHLcHRz/?mibextid=wwXIfr';
 a.target='_blank';
 a.rel='noopener noreferrer';
 a.setAttribute('aria-label','Tieks Tweewielers op Facebook');
-a.textContent='● Facebook';
+a.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg> Facebook';
 email.insertAdjacentElement('afterend',a);
 })();
