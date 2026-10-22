@@ -132,3 +132,12 @@
 .detail-highlights li{position:relative;padding-left:24px;font-size:14px;line-height:1.5;color:#333c30}
 .detail-highlights li:before{content:"✓";position:absolute;top:0;left:0;font-weight:900;color:#62742e}
 @media(max-width:700px){.detail-highlights{padding:16px 17px;margin:18px 0 12px}.detail-highlights li{font-size:13px}}
+
+
+/* Facebook: klein icoon in de bovenste zwarte balk, boven het hoofdmenu. */
+.topline .container > span:nth-child(2){margin-left:auto}
+.topline .tieks-facebook-top{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;margin-left:1px;color:var(--y);border:1px solid rgba(255,255,255,.2);border-radius:50%;line-height:1;transition:background .15s ease,color .15s ease}
+.topline .tieks-facebook-top svg{display:block;width:15px;height:15px}
+.topline .tieks-facebook-top:hover{color:var(--k);background:var(--y)}
+.topline .tieks-facebook-top:focus-visible{outline:2px solid var(--y);outline-offset:2px}
+@media(max-width:600px){.topline .container{gap:7px}.topline .container>span:first-child{font-size:9px;letter-spacing:.025em}.topline .tieks-facebook-top{margin-left:auto;flex-basis:26px;width:26px;height:26px}}
