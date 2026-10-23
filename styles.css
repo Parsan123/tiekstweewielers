@@ -141,3 +141,37 @@
 .topline .tieks-facebook-top:hover{color:var(--k);background:var(--y)}
 .topline .tieks-facebook-top:focus-visible{outline:2px solid var(--y);outline-offset:2px}
 @media(max-width:600px){.topline .container{gap:7px}.topline .container>span:first-child{font-size:9px;letter-spacing:.025em}.topline .tieks-facebook-top{margin-left:auto;flex-basis:26px;width:26px;height:26px}}
+
+/* Tieks winterbeurtactie - oktober t/m februari; zichtbaar via app.js. */
+.winter-promo[hidden]{display:none!important}
+.winter-promo{background:#10130e;color:#fff;padding:clamp(32px,4.5vw,66px) 0;position:relative;overflow:hidden;isolation:isolate}
+.winter-promo:before{content:"";position:absolute;inset:-150px auto auto -100px;width:460px;height:460px;border:1px solid rgba(237,234,42,.12);border-radius:50%;box-shadow:0 0 0 95px rgba(237,234,42,.025),0 0 0 190px rgba(237,234,42,.014);z-index:-1;pointer-events:none}
+.winter-promo__layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(24px,5vw,84px)}
+.winter-promo__intro{max-width:640px;min-width:0}
+.winter-promo__eyebrow{display:inline-flex;align-items:center;gap:9px;color:#edea2a;font-size:11px;letter-spacing:.15em;font-weight:850;margin-bottom:20px}
+.winter-promo__eyebrow svg{flex:none}
+.winter-promo__intro h2{font-size:clamp(32px,4.1vw,65px);line-height:1.07;letter-spacing:-.048em;color:#fff;margin:0 0 20px}
+.winter-promo__intro p{color:#d7dacd;line-height:1.7;font-size:clamp(14px,1.15vw,17px);max-width:560px;margin:0}
+.winter-promo__intro .winter-promo__extra{margin-top:12px;font-size:14px}
+.winter-promo__offers{min-width:0}
+.winter-promo__prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.winter-promo__price-card{background:#272b23;border:1px solid #42483a;border-radius:14px;padding:clamp(15px,1.65vw,25px);display:flex;flex-direction:column;min-width:0}
+.winter-promo__price-card--featured{border-color:rgba(237,234,42,.65);background:#2b2f21}
+.winter-promo__price-label{font-size:clamp(12px,1vw,14px);line-height:1.35;font-weight:800;color:#fff;min-height:35px}
+.winter-promo__price-card strong{color:#edea2a;font-size:clamp(37px,4vw,64px);line-height:1.1;white-space:nowrap;letter-spacing:-.05em;margin:11px 0 7px;font-weight:950}
+.winter-promo__price-card strong span{font-size:.43em;vertical-align:12%}
+.winter-promo__price-card small{color:#d0d4c8;font-size:12px;line-height:1.5}
+.winter-promo__pickup{display:flex;align-items:center;gap:10px;color:#f1f2e9;font-size:13px;line-height:1.45;margin:16px 0}
+.winter-promo__pickup svg{flex:0 0 19px;color:#edea2a}
+.winter-promo__actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.winter-promo__button{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:52px;padding:13px 19px;background:#edea2a;color:#080907!important;font-size:13px;line-height:1.3;font-weight:950;border-radius:6px;transition:background .15s ease,transform .15s ease;max-width:100%}
+.winter-promo__button:hover{background:#f7f468;transform:translateY(-1px)}
+.winter-promo__button:focus-visible,.winter-promo__more:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.winter-promo__button span{font-size:18px}
+.winter-promo__more{color:#edea2a;font-size:13px;font-weight:850;text-decoration:underline;text-underline-offset:4px}
+.winter-promo__conditions{color:#b9c0b3;font-size:11px;line-height:1.55;margin:14px 0 0}
+.winter-promo--workshop{border-top:3px solid #edea2a}
+@media(max-width:1050px){.winter-promo__layout{grid-template-columns:1fr;gap:24px}.winter-promo__intro{max-width:800px}.winter-promo__offers{max-width:750px}}
+@media(max-width:600px){.winter-promo{padding:31px 0 35px}.winter-promo__eyebrow{font-size:10px;letter-spacing:.1em;margin-bottom:14px}.winter-promo__intro h2{font-size:clamp(30px,8vw,41px);line-height:1.09;margin-bottom:12px}.winter-promo__intro p{font-size:14px;line-height:1.55}.winter-promo__prices{gap:8px}.winter-promo__price-card{border-radius:10px;padding:13px 10px}.winter-promo__price-label{font-size:11px;min-height:36px}.winter-promo__price-card strong{font-size:clamp(34px,9vw,47px)}.winter-promo__price-card small{font-size:11px}.winter-promo__pickup{margin:14px 0;font-size:12px}.winter-promo__actions{gap:14px}.winter-promo__button{width:100%;justify-content:center;font-size:13px}.winter-promo__more{font-size:12px}.winter-promo__conditions{margin-top:14px}}
+@media(max-width:340px){.winter-promo__prices{grid-template-columns:1fr}.winter-promo__price-label{min-height:0}}
+@media(prefers-reduced-motion:reduce){.winter-promo__button{transition:none}.winter-promo__button:hover{transform:none}}
