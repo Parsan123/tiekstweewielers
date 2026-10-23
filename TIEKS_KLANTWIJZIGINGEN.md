@@ -8,6 +8,10 @@ De inhoudelijke aanpassingen zijn uitgevoerd op de ontwikkelbranch `tieks/klantw
 
 ## Uitgevoerde aanpassingen
 
+- [x] Mirjan bevestigde Gazelle Curb C1-prijs (€ 2.399): detailpagina, drie overzichten en catalogus aangepast.
+- [x] FAQ aangevuld met lease via Hellorider/Lease a Bike, particuliere Gazelle Fiets Lease en Gazelle Financieren; contact-CTA's binnen de eigen site gehouden.
+
+
 - [x] Gratis haal- en brengservice: van 50 km naar 25 km, inclusief het grote KM-getal op het servicedashboard.
 - [x] Sparta, Batavus en Koga: tijdelijk uit productoverzichten, filters en actuele catalogus.
 - [x] Historische catalogus behouden als `catalog-archief-oktober-2026.json`.
