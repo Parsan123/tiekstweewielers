@@ -191,3 +191,33 @@
 .winter-bar__footnote{font-size:10px;opacity:.8;margin-top:7px;line-height:1.35}
 @media(max-width:900px){.winter-bar__inner{justify-content:flex-start;gap:9px 14px}.winter-bar__deal{flex-basis:calc(100% - 148px)}.winter-bar__pickup{flex:1 1 auto}.winter-bar__link{margin-left:auto}}
 @media(max-width:600px){.winter-bar{padding:12px 0}.winter-bar__inner{gap:8px 10px}.winter-bar__badge{font-size:10px;padding:7px 9px}.winter-bar__deal{font-size:12px;flex:1 1 calc(100% - 115px)}.winter-bar__separator{display:none}.winter-bar__deal strong{display:inline}.winter-bar__pickup{font-size:11px}.winter-bar__link{font-size:11px;padding:8px 11px;min-height:35px}.winter-bar__footnote{font-size:9px;margin-top:6px}}
+
+/* Bovenste compacte wintermelding; actief oktober t/m februari via data-seasonal-promo. */
+.winter-topline[hidden]{display:none!important}
+.winter-topline{background:#131610;color:#fff;border-bottom:1px solid rgba(237,234,42,.4)}
+.winter-topline__link{display:block;color:#fff!important;text-decoration:none}
+.winter-topline__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(10px,1.5vw,23px);min-height:49px;padding-top:8px;padding-bottom:8px}
+.winter-topline__tag{display:inline-flex;align-items:center;gap:7px;color:#edea2a;font-size:11px;letter-spacing:.095em;font-weight:900;white-space:nowrap}
+.winter-topline__tag svg{flex:none}
+.winter-topline__offer{font-size:clamp(11px,1.15vw,14px);line-height:1.45;flex:1;text-align:center}
+.winter-topline__offer strong{color:#edea2a;font-weight:950}
+.winter-topline__action{display:inline-flex;align-items:center;gap:9px;color:#edea2a;font-size:12px;white-space:nowrap;font-weight:850}
+.winter-topline__action span{font-size:17px}
+.winter-topline__mobile{display:none}
+.winter-topline__link:hover .winter-topline__action{text-decoration:underline;text-underline-offset:4px}
+.winter-topline__link:focus-visible{outline:3px solid #edea2a;outline-offset:-4px}
+@media(max-width:740px){
+ .winter-topline__inner{gap:8px;min-height:44px}
+ .winter-topline__tag{font-size:10px;letter-spacing:.025em;gap:4px}
+ .winter-topline__tag svg{width:13px;height:13px}
+ .winter-topline__offer{font-size:11px}
+ .winter-topline__desktop{display:none}
+ .winter-topline__mobile{display:inline}
+ .winter-topline__action{font-size:10px;gap:4px}
+}
+@media(max-width:350px){
+ .winter-topline__tag{font-size:9px}
+ .winter-topline__offer{font-size:10px}
+ .winter-topline__action{font-size:0;gap:0}
+ .winter-topline__action span{font-size:18px}
+}
