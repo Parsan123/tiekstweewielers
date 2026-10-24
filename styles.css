@@ -6,7 +6,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 
-/* ===== Tieks fase 1 — direct contact en 25 km servicegebied ===== */
+/* ===== Tieks fase 1 — direct contact en servicegebied (actueel 25 km) ===== */
 .contact-direct{padding:10px 0 0;min-width:0}
 .contact-direct h2{font-size:clamp(38px,4.4vw,65px);line-height:1.01;margin:18px 0 20px}
 .contact-direct .prose{max-width:610px}
@@ -100,6 +100,47 @@
 @media(max-width:600px){.premium-service-head{display:block}.premium-km{margin-top:25px;display:inline-block;padding:16px 20px}.premium-km strong{font-size:46px}.premium-map-buttons{flex-direction:column}.premium-map-buttons .btn{min-width:0}.premium-service-choices{gap:8px}.premium-choice{padding:14px 12px}.premium-choice.is-selected{padding:13px 11px}.premium-process ol{grid-template-columns:1fr 1fr;gap:20px}.premium-process li strong{font-size:14px}.premium-other-benefits{grid-template-columns:1fr}.premium-map-placeholder,.premium-embedded-map{height:245px}}
 @media(prefers-reduced-motion:reduce){.premium-choice,.premium-map-buttons .btn{transition:none}}
 
+/* Tieks revisie okt 2026 */
+.logo{width:clamp(110px,9vw,125px);flex:0 0 clamp(110px,9vw,125px)}
+.logo img{height:43px;max-width:100%;object-fit:contain}
+.nav{gap:clamp(12px,1.6vw,25px)}
+.navlinks{gap:clamp(9px,1.15vw,18px)}
+.tieks-facebook{display:inline-flex!important;align-items:center;gap:7px;color:var(--y)!important;margin-top:12px;font-weight:850;font-size:12px;line-height:1.6}
+.tieks-facebook:hover{text-decoration:underline}
+.tieks-facebook:focus-visible{outline:2px solid var(--y);outline-offset:3px}
+.accessories-section{background:var(--paper)}
+.accessories-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:30px 0 25px}
+.accessories-gallery img{display:block;width:100%;height:clamp(240px,34vw,475px);object-fit:cover;object-position:center}
+.team-photo-2026{width:100%;height:auto!important;max-height:none!important;object-fit:contain!important}
+.curb-gallery{min-width:0}
+.curb-gallery .curb-main{display:grid;place-items:center;min-height:275px;background:#f2f2ee;overflow:hidden}
+.curb-gallery .curb-main img{display:block;width:100%;max-height:520px;object-fit:contain}
+.curb-thumbnails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:11px}
+.curb-thumbnails button{display:grid;gap:6px;min-width:0;padding:6px;border:2px solid #d0d0c9;background:#fff;cursor:pointer;font:inherit}
+.curb-thumbnails button[aria-pressed=true]{border-color:var(--k);background:#f8f6d5}
+.curb-thumbnails button:focus-visible{outline:3px solid #727e26;outline-offset:3px}
+.curb-thumbnails button img{width:100%;height:94px;object-fit:contain}
+.curb-thumbnails button span{text-align:center;font-size:11px;font-weight:800}
+@media(max-width:1100px){.logo{width:108px;flex-basis:108px}.logo img{height:40px}}
+@media(max-width:700px){.logo{width:96px;flex-basis:96px}.logo img{height:36px}.accessories-gallery{grid-template-columns:1fr}.accessories-gallery img{height:280px}.curb-thumbnails button img{height:70px}}
+
+/* Productbeschrijvingen: leesbare alinea's en kernpunten (oktober 2026) */
+.detail-desc + .detail-desc{margin-top:12px}
+.detail-highlights{margin:21px 0 15px;padding:20px 22px;border:1px solid var(--line);border-radius:15px;background:#f8f8f4}
+.detail-highlights h2{font-size:clamp(18px,2vw,23px);line-height:1.25;margin:0 0 14px;font-weight:850;color:var(--k)}
+.detail-highlights ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}
+.detail-highlights li{position:relative;padding-left:24px;font-size:14px;line-height:1.5;color:#333c30}
+.detail-highlights li:before{content:"✓";position:absolute;top:0;left:0;font-weight:900;color:#62742e}
+@media(max-width:700px){.detail-highlights{padding:16px 17px;margin:18px 0 12px}.detail-highlights li{font-size:13px}}
+
+
+/* Facebook: klein icoon in de bovenste zwarte balk, boven het hoofdmenu. */
+.topline .container > span:nth-child(2){margin-left:auto}
+.topline .tieks-facebook-top{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;margin-left:1px;color:var(--y);border:1px solid rgba(255,255,255,.2);border-radius:50%;line-height:1;transition:background .15s ease,color .15s ease}
+.topline .tieks-facebook-top svg{display:block;width:15px;height:15px}
+.topline .tieks-facebook-top:hover{color:var(--k);background:var(--y)}
+.topline .tieks-facebook-top:focus-visible{outline:2px solid var(--y);outline-offset:2px}
+@media(max-width:600px){.topline .container{gap:7px}.topline .container>span:first-child{font-size:9px;letter-spacing:.025em}.topline .tieks-facebook-top{margin-left:auto;flex-basis:26px;width:26px;height:26px}}
 
 /* Tieks winterbeurtactie - oktober t/m februari; zichtbaar via app.js. */
 .winter-promo[hidden]{display:none!important}
@@ -135,7 +176,6 @@
 @media(max-width:340px){.winter-promo__prices{grid-template-columns:1fr}.winter-promo__price-label{min-height:0}}
 @media(prefers-reduced-motion:reduce){.winter-promo__button{transition:none}.winter-promo__button:hover{transform:none}}
 
-
 /* Compacte winteractiebalk onder de hero: hoofdfoto blijft direct zichtbaar. */
 .winter-bar[hidden]{display:none!important}
 .winter-bar{background:#edea2a;color:#10130e;padding:14px 0 11px;border-bottom:1px solid #c7c429}
@@ -151,7 +191,6 @@
 .winter-bar__footnote{font-size:10px;opacity:.8;margin-top:7px;line-height:1.35}
 @media(max-width:900px){.winter-bar__inner{justify-content:flex-start;gap:9px 14px}.winter-bar__deal{flex-basis:calc(100% - 148px)}.winter-bar__pickup{flex:1 1 auto}.winter-bar__link{margin-left:auto}}
 @media(max-width:600px){.winter-bar{padding:12px 0}.winter-bar__inner{gap:8px 10px}.winter-bar__badge{font-size:10px;padding:7px 9px}.winter-bar__deal{font-size:12px;flex:1 1 calc(100% - 115px)}.winter-bar__separator{display:none}.winter-bar__deal strong{display:inline}.winter-bar__pickup{font-size:11px}.winter-bar__link{font-size:11px;padding:8px 11px;min-height:35px}.winter-bar__footnote{font-size:9px;margin-top:6px}}
-
 
 /* Bovenste compacte wintermelding; actief oktober t/m februari via data-seasonal-promo. */
 .winter-topline[hidden]{display:none!important}
@@ -184,14 +223,12 @@
 }
 
 
-/* Gazelle Curb C1: compacte fotogalerij met drie kleurvarianten. */
-.curb-gallery{min-width:0}
-.curb-gallery .curb-main{display:grid;place-items:center;min-height:275px;background:#f2f2ee;overflow:hidden}
-.curb-gallery .curb-main img{display:block;width:100%;max-height:520px;object-fit:contain}
-.curb-thumbnails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:11px}
-.curb-thumbnails button{display:grid;gap:6px;min-width:0;padding:6px;border:2px solid #d0d0c9;background:#fff;cursor:pointer;font:inherit}
-.curb-thumbnails button[aria-pressed=true]{border-color:var(--k);background:#f8f6d5}
-.curb-thumbnails button:focus-visible{outline:3px solid #727e26;outline-offset:3px}
-.curb-thumbnails button img{width:100%;height:94px;object-fit:contain}
-.curb-thumbnails button span{text-align:center;font-size:11px;font-weight:800}
-@media(max-width:700px){.curb-thumbnails{gap:6px}.curb-thumbnails button{padding:4px}.curb-thumbnails button img{height:65px}.curb-thumbnails button span{font-size:10px}}
+/* Direct vindbaar: fietstassen en accessoires */
+#fietstassen-accessoires{scroll-margin-top:112px}
+@media(min-width:921px){
+ .navlinks{gap:clamp(9px,1.15vw,16px);font-size:11px}
+ .nav{gap:clamp(12px,1.6vw,24px)}
+ .navcta{padding:13px 13px;white-space:nowrap}
+}
+.tieks-accessories-nav{white-space:nowrap}
+@media(max-width:920px){#fietstassen-accessoires{scroll-margin-top:85px}}
